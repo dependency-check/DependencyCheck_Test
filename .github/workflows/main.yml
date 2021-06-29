@@ -16,7 +16,7 @@ jobs:
           project: 'test'
           path: '.'
           format: 'HTML'    
-          others: '--disableYarnAudit --failOnCVSS 7'
+          others: '"--disableYarnAudit", "--failOnCVSS 7"'
       - name: Upload Test results
         uses: actions/upload-artifact@master
         with:
